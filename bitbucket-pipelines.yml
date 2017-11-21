@@ -1,0 +1,20 @@
+clone:
+  depth: full
+pipelines:
+  default:
+    - step:
+        image: node:8.6.0
+        caches:
+          - node
+        script:
+          - npm install
+          - npm run pipelines
+        services:
+          - mysql
+definitions:
+  services:
+    mysql:
+      image: mysql
+      environment:
+        MYSQL_DATABASE: 'pipelines'
+        MYSQL_ROOT_PASSWORD: 'let_me_in'
