@@ -9,6 +9,12 @@ pipelines:
         script:
           - npm install
           - npm run pipelines
+          # Deploy to Digital Ocean
+          - mkdir -p ~/.ssh
+          - cat my_know_hosts >> ~/.ssh/know_hosts
+          - (umask 077; echo $SSH_PRIVATE_KEY | base64 --decode -i > ~/.ssh/id_rsa)
+          - git remote add server $DOCEAN_GIT_REPO
+          - git push server master
         services:
           - mysql
 definitions:
