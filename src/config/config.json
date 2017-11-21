@@ -1,0 +1,33 @@
+{
+  "development": {
+    "username": "root",
+    "password": "1234",
+    "database": "graphql_blog_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "1234",
+    "database": "graphql_blog_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "pipelines": {
+    "username": "root",
+    "password": "let_me_in",
+    "database": "pipelines",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql",
+    "logging": false
+  }
+}
