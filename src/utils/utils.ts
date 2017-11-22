@@ -27,7 +27,7 @@ export const onError = (server: Server) => {
 export const onListening = (server: Server) => {
     return (): void => {
         let addr = server.address();
-        let bind = (typeof addr === 'string') ? `pipe ${addr}` : `port ${addr.port}`;
+        let bind = (typeof addr === 'string') ? `pipe ${addr}` : `http://${addr.address}:${addr.port}`;
         console.log(`Listening at ${bind}...`);
     }
 }
