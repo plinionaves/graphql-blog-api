@@ -56,6 +56,6 @@
     "jsonwebtoken": "8.1.0",
     "lodash": "4.17.4",
     "mysql2": "1.4.2",
-    "sequelize": "4.13.10"
+    "sequelize": "5.15.1"
   }
 }
