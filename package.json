@@ -54,7 +54,7 @@
     "graphql-tools": "2.3.0",
     "helmet": "3.9.0",
     "jsonwebtoken": "8.1.0",
-    "lodash": "4.17.4",
+    "lodash": "4.17.19",
     "mysql2": "1.4.2",
     "sequelize": "4.13.10"
   }
