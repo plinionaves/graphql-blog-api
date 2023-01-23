@@ -32,7 +32,7 @@
     "@types/node": "8.0.34",
     "@types/sequelize": "4.0.76",
     "chai": "4.1.2",
-    "chai-http": "3.0.0",
+    "chai-http": "4.3.0",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
     "gulp-typescript": "3.2.2",
